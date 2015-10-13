@@ -3,14 +3,6 @@
     "type": "library",
     "description": "A PHP library",
     "keywords": ["php", "library"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "My name",
-            "email": "my@email.com",
-            "homepage": "http://www.my-website.com"
-        }
-    ],
     "require": {
         "php": ">=5.5.0"
     },
