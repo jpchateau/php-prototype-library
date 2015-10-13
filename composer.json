@@ -1,0 +1,30 @@
+{
+    "name": "my-vendor/my-library",
+    "type": "library",
+    "description": "A PHP library",
+    "keywords": ["php", "library"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "My name",
+            "email": "my@email.com",
+            "homepage": "http://www.my-website.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "MyVendor\\MyLibrary\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MyVendor\\MyLibrary\\Tests\\": "tests"
+        }
+    }
+}
