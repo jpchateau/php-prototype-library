@@ -1,5 +1,5 @@
 {
-    "name": "my-vendor/my-library",
+    "name": "jpchateau/prototype-php-library",
     "type": "library",
     "description": "A PHP library",
     "keywords": ["php", "library"],
@@ -11,12 +11,12 @@
     },
     "autoload": {
         "psr-4": {
-            "MyVendor\\MyLibrary\\": "src"
+            "Foo\\Bar\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MyVendor\\MyLibrary\\Tests\\": "tests"
+            "Foo\\Bar\\Tests\\": "tests"
         }
     }
 }
