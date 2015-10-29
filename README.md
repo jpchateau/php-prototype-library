@@ -29,9 +29,13 @@ $ echo -e "# $APP\n\n*A PHP Library*" > README.md
 
 Do not forget to pick up a license and start working on your new PHP library right now!
 
-Tests
+
+QA Tools
 =====
 
 ```shell
 $ ./vendor/bin/phpunit
+$ ./vendor/bin/phpcs src/ --standard=PSR2
+$ ./vendor/bin/phpmd src/ text cleancode,codesize,controversial,design,naming,unusedcode
+$ ./vendor/bin/phpcpd src/
 ```
