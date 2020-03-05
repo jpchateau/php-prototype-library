@@ -2,15 +2,9 @@
 
 namespace Foo\Bar;
 
-/**
- * Class Baz.
- */
 class Baz
 {
-    /**
-     * @return string
-     */
-    public function quz()
+    public function quz(): string
     {
         return 'quz';
     }
