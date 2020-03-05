@@ -1,16 +1,15 @@
 {
     "name": "jpchateau/prototype-php-library",
     "type": "library",
-    "description": "A PHP library",
+    "description": "My PHP library",
     "keywords": ["php", "library"],
     "require": {
-        "php": ">=5.5.0"
+        "php": "^7.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "*",
-        "sebastian/phpcpd": "*",
-        "phpmd/phpmd": "*",
-        "squizlabs/php_codesniffer": "*"
+        "phpunit/phpunit": "^7.5",
+        "phpstan/phpstan": "^0.12",
+        "squizlabs/php_codesniffer": "^3.5"
     },
     "autoload": {
         "psr-4": {
