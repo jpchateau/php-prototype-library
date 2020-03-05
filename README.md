@@ -23,7 +23,7 @@ Run these command lines with your own values for `directory`, `company` and `pro
 
 ```shell
 $ DIRECTORY=mylib
-$ composer create-project jpchateau/php-prototype-library $DIRECTORY && cd $DIRECTORY
+$ composer create-project jpchateau/prototype-php-library $DIRECTORY && cd $DIRECTORY
 $ make company=MyCompanyName project=MyProjectName install
 ```
 
