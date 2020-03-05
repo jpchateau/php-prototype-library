@@ -1,6 +1,4 @@
-# PHP Library Prototype
-
-[![Build Status](https://travis-ci.org/jpchateau/php-prototype-library.svg?branch=master)](https://travis-ci.org/jpchateau/php-prototype-library)
+# PHP Library Prototype [![Build Status](https://travis-ci.org/jpchateau/php-prototype-library.svg?branch=master)](https://travis-ci.org/jpchateau/php-prototype-library)
 
 *PHP Library Prototype is a tool to quickly initiate the development of a PHP library.*
 
@@ -15,7 +13,9 @@ It will:
 ## Requirements
 
 * PHP >7.1
-* composer
+* php-xml extension
+* php-mbstring extension
+* [Composer](https://getcomposer.org/download/)
 
 ## Usage
 
@@ -27,7 +27,8 @@ $ composer create-project jpchateau/prototype-php-library $DIRECTORY && cd $DIRE
 $ make company=MyCompanyName project=MyProjectName install
 ```
 
-In the `composer.json` file, do not forget to pick up a license and edit the description ;)
+You are ready to develop!  
+Do not forget to pick up a license and edit the description inside the `composer.json` file ;)
 
 ## QA Tools
 
