@@ -1,5 +1,5 @@
 {
-    "name": "jpchateau/prototype-php-library",
+    "name": "jpchateau/php-prototype-library",
     "type": "library",
     "description": "My PHP library",
     "keywords": ["php", "library"],
@@ -13,12 +13,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Foo\\Bar\\": "src"
+            "Konatech\\Djilib\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Foo\\Bar\\Tests\\": "tests"
+            "Konatech\\Djilib\\Tests\\": "tests"
         }
     }
 }
