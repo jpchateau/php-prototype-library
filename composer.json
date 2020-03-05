@@ -1,6 +1,7 @@
 {
     "name": "jpchateau/php-prototype-library",
     "type": "library",
+    "license": "MIT",
     "description": "My PHP library",
     "keywords": ["php", "library"],
     "require": {
@@ -13,12 +14,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Konatech\\Djilib\\": "src"
+            "Foo\\Bar\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Konatech\\Djilib\\Tests\\": "tests"
+            "Foo\\Bar\\Tests\\": "tests"
         }
     }
 }
