@@ -3,8 +3,9 @@
 namespace Foo\Bar\Tests;
 
 use Foo\Bar\Baz;
+use PHPUnit\Framework\TestCase;
 
-class BazTest extends \PHPUnit_Framework_TestCase
+class BazTest extends TestCase
 {
     public function testQuz()
     {

@@ -2,20 +2,19 @@
 
 [![Build Status](https://travis-ci.org/jpchateau/prototype-php-library.svg?branch=master)](https://travis-ci.org/jpchateau/prototype-php-library)
 
-*A PHP library prototype*
+*PHP library prototype*
 
-Features
-========
+## Features
 
 The aim of this prototype is to save time when starting to develop a new PHP library.
 It will:
-* Download and install basic files - a class, a test class, a phpunit and a travis file
-* Replace the genuine namespace with the data you provided
+* Download and install basic files - a class and a test class
+* Install QA tools - phpunit, phpstan and phpcs
+* Replace the genuine namespace with your own namespace
+* Add a basic .gitignore file
 * Generate a basic README file
 
-
-Usage
-=======
+## Usage
 
 Fill the vendor and app variables with your own values, then run:
 
@@ -24,18 +23,15 @@ $ VENDOR=company_name;APP=library_name
 $ composer create-project jpchateau/prototype-php-library $APP && cd $APP
 $ find . -type f -exec sed -i "s/Foo/$VENDOR/g" {} \; -exec sed -i "s/Bar/$APP/g" {} \;
 $ composer dump-autoload
-$ echo -e "# $APP\n\n*A PHP Library*" > README.md
+$ echo -e "# $APP\n\n*My PHP Library*" > README.md
 ```
 
 Do not forget to pick up a license and start working on your new PHP library right now!
 
-
-QA Tools
-=====
+## QA Tools
 
 ```shell
 $ ./vendor/bin/phpunit
 $ ./vendor/bin/phpcs src/ --standard=PSR2
-$ ./vendor/bin/phpmd src/ text cleancode,codesize,controversial,design,naming,unusedcode
-$ ./vendor/bin/phpcpd src/
+$ ./vendor/bin/phpstan analyse -l 0 src/
 ```
