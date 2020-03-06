@@ -2,16 +2,16 @@
     "name": "jpchateau/php-prototype-library",
     "type": "library",
     "license": "MIT",
-    "description": "My PHP library",
+    "description": "MyProject description",
     "keywords": ["php", "library"],
     "require": {
-        "php": "^7.1",
+        "php": "^7.2",
         "ext-dom": "*",
         "ext-mbstring": "*"
     },
     "require-dev": {
         "phpstan/phpstan": "^0.12",
-        "phpunit/phpunit": "^7.5",
+        "phpunit/phpunit": "^8.5",
         "squizlabs/php_codesniffer": "^3.5"
     },
     "autoload": {
