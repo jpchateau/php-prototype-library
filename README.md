@@ -10,11 +10,11 @@ It will:
 * Install QA tools: phpunit, phpstan and phpcs
 * Generate basic .gitignore and README files
 
-`.gitignore` file is based upon [gitignore.io API](https://www.gitignore.io/).
+Note that `.gitignore` file is based upon [gitignore.io](https://www.gitignore.io/) API.
 
 ## Requirements
 
-* PHP >7.2
+* PHP >= 7.2
 * php-xml extension
 * php-mbstring extension
 * [Composer](https://getcomposer.org/download/)
@@ -36,13 +36,17 @@ $ composer create-project jpchateau/prototype-php-library MyDirectory && cd $_
 $ make company=MyCompanyName project=MyProjectName install
 ```
 
-You are ready to develop!  
-Do not forget to pick up a license and edit the description inside the `composer.json` file ;)
+You are ready to develop!
+
+## Tests
+
+```bash
+$ make test
+```
 
 ## QA Tools
 
-```shell
-$ make test
+```bash
 $ ./vendor/bin/phpcs src/ --standard=PSR2
 $ ./vendor/bin/phpstan analyse -l 7 src/
 ```
