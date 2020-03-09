@@ -10,7 +10,7 @@ It will:
 * Install QA tools: phpunit, phpstan and phpcs
 * Generate basic .gitignore and README files
 
-Note that `.gitignore` file is based upon [gitignore.io](https://www.gitignore.io/) API.
+Please note that `.gitignore` file is based upon [gitignore.io](https://www.gitignore.io/) API.
 
 ## Requirements
 
@@ -33,7 +33,7 @@ $ composer create-project jpchateau/prototype-php-library MyDirectory && cd $_
 2. Then, run the install command to complete the process. Replace `MyCompany` and `MyProject` with your own values:
 
 ```bash
-$ make company=MyCompanyName project=MyProjectName install
+$ make company=MyCompany project=MyProject install
 ```
 
 You are ready to develop!
@@ -50,3 +50,9 @@ $ make test
 $ ./vendor/bin/phpcs src/ --standard=PSR2
 $ ./vendor/bin/phpstan analyse -l 7 src/
 ```
+
+## Troubleshooting
+
+*Error when running `phpstan`: `SHA1 signature could not be verified`*
+
+Try to remove `vendor` directory and run `$ composer install` before executing `phpstan` again.
