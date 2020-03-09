@@ -2,7 +2,7 @@
     "name": "jpchateau/php-prototype-library",
     "type": "library",
     "license": "MIT",
-    "description": "MyProject description",
+    "description": "Quickly initiate the development of a PHP library",
     "keywords": ["php", "library"],
     "require": {
         "php": "^7.2",
@@ -16,12 +16,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Foo\\Bar\\": "src"
+            "MyCompany\\MyProject\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Foo\\Bar\\Tests\\": "tests"
+            "MyCompany\\MyProject\\Tests\\": "tests"
         }
     },
     "config": {

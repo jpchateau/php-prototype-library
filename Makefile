@@ -3,9 +3,13 @@ BIN_DIR := vendor/bin
 install: ## Install the project
 install:
 	@echo "Generating files for $(company)\\$(project) namespace..."
-	@find . -type f -exec sed -i "s/Foo/$(company)/g" {} \; -exec sed -i "s/Bar/$(project)/g" {} \;
+	@find ./src -type f -exec sed -i "s/MyCompany\\\\MyProject/$(company)\\\\$(project)/g" {} \;
+	@find ./tests -type f -exec sed -i "s/MyCompany\\\\MyProject/$(company)\\\\$(project)/g" {} \;
+	@sed -i.bak "s/jpchateau\/php-prototype-library/$(project)/g" composer.json
+	@sed -i.bak "s/Quickly initiate the development of a PHP library/$(project) description/g" composer.json
+	@sed -i.bak "s/MyCompany\\\\\\\\MyProject/$(company)\\\\\\\\$(project)/g" composer.json
 	@composer dump-autoload
-	@rm .travis.yml
+	@rm .travis.yml *.bak
 	@echo "# $(project)" > README.md
 
 test: ## Execute all the tests
