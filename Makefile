@@ -1,7 +1,8 @@
 BIN_DIR := bin
 
+.PHONY: install tests
+
 # Install the project
-.PHONY: install
 install:
 	@echo "Generating files for $(company)\\$(project) namespace..."
 	@find ./src -type f -exec sed -i "s/MyCompany\\\\MyProject/$(company)\\\\$(project)/g" {} \;
@@ -14,6 +15,5 @@ install:
 	@echo "# $(project)" > README.md
 
 # Execute all the tests
-.PHONY: tests
 tests:
 	$(BIN_DIR)/phpunit

@@ -52,9 +52,3 @@ $ make tests
 $ bin/phpcs src/ --standard=PSR2
 $ bin/phpstan analyse -l 7 src/
 ```
-
-## Troubleshooting
-
-*Error when running `phpstan`: `SHA1 signature could not be verified`*
-
-Try to remove `vendor` directory and run `$ composer install` before executing `phpstan` again.

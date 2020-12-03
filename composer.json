@@ -1,6 +1,7 @@
 {
     "name": "jpchateau/php-prototype-library",
     "type": "library",
+    "license": "MIT",
     "description": "Quickly initiate the development of a new PHP library",
     "keywords": ["php", "library"],
     "require": {
